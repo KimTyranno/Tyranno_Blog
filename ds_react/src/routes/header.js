@@ -1,11 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "scss/header.scss";
-const Header = () => {
+const Header = (props) => {
     return (
         <header>
-            <a href="home">
-                DS_BLOG
-            </a>
+            <Link to={{
+                pathname: props.item.path,
+                state: [
+                    {
+                        title: props.item.title,
+                        content: props.item.content
+                    }
+                ]
+            }}>DS_BLOG</Link>
         </header>
     );
 }

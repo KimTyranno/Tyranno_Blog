@@ -1,33 +1,46 @@
 import React from 'react';
-import { Section, ItemList } from 'components';
+import { Route } from 'react-router-dom';
+import { Section } from 'components';
+import { NavLink } from 'react-router-dom';
 import "scss/main.scss";
 
 const Article = (props) => {
-    // ul태그 클래스명
-    const ulClassName = "main__list";
-    // ll태그 클래스명
-    const liClassName = "main__item";
+    const liList = props.mainData.subMenu.map((item, i) => (
+        <li key={i} className="main__item">
+            <NavLink to={{
+                pathname: props.mainData.contentsEx[i + 1].path,
+                state: [
+                    {
+                        title: props.mainData.contentsEx[i + 1].title,
+                        content: props.mainData.contentsEx[i + 1].content
+                    }
+                ]
+            }} activeStyle={{
+                'backgroundColor': '#333',
+                'color': 'white'
+            }}>{item.name}</NavLink>
+        </li>
+    ));
     return (
         <article>
-            <div class="main">
-                <Section
+            <div className="main">
+                <Route path="/" component={Section} />
+                {/* <Section
                     title={props.mainData.title}
                     content={props.mainData.content}>
-                </Section>
+                </Section> */}
                 <article>
-                    <div class="main__content main__content--blue">
-                        <div class="main__searchBox">
+                    <div className="main__content main__content--blue">
+                        <div className="main__searchBox">
                             <input type="text" placeholder="검색어를 입력해주세요." />
-                            <a href="search"><i class="fas fa-search fa-lg"></i></a>
+                            <a href="search"><i className="fas fa-search fa-lg"></i></a>
                         </div>
-                        <div class="main__title">
+                        <div className="main__title">
                             menus of item1
                         </div>
-                        <ItemList
-                            ulClassName={ulClassName}
-                            items={props.mainData.ulData}
-                            liClassName={liClassName}>
-                        </ItemList>
+                        <ul className='main__list'>
+                            {liList}
+                        </ul>
                     </div>
                 </article>
             </div>

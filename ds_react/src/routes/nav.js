@@ -7,11 +7,13 @@ const Nav = (props) => {
     // ll태그 클래스명
     const liClassName = "nav__item";
     return (
-        <div class="nav">
+        <div className="nav">
             <ItemList
                 ulClassName={ulClassName}
                 items={props.items}
-                liClassName={liClassName}></ItemList>
+                liClassName={liClassName}
+                linkData={props.linkData}
+            ></ItemList>
         </div>
     );
 }

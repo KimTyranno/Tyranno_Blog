@@ -1,13 +1,13 @@
 import React from 'react';
-const Section = (props) => {
+const Section = ({ location }) => {
     return (
         <section>
-            <div class="main__content main__content--section main__content--red">
-                <div class="main__title">
-                    {props.title}
+            <div className="main__content main__content--section main__content--red">
+                <div className="main__title">
+                    {location.state ? location.state[0].title : '메인페이지'}
                 </div>
                 <div>
-                    {props.content}
+                    {location.state ? location.state[0].content : 'Tyranno\'s_BLOG 입니다!'}
                 </div>
             </div>
         </section>
