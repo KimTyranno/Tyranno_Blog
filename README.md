@@ -1,2 +1,2 @@
-# Tyranno-s_Blog
+# Tyranno's_Blog
 First Project
