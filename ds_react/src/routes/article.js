@@ -8,11 +8,11 @@ const Article = (props) => {
     const liList = props.mainData.subMenu.map((item, i) => (
         <li key={i} className="main__item">
             <NavLink to={{
-                pathname: props.mainData.contentsEx[i + 1].path,
+                pathname: item.path,
                 state: [
                     {
-                        title: props.mainData.contentsEx[i + 1].title,
-                        content: props.mainData.contentsEx[i + 1].content
+                        title: item.board.title,
+                        content: item.board.content
                     }
                 ]
             }} activeStyle={{

@@ -10,9 +10,9 @@ const Nav = (props) => {
         <div className="nav">
             <ItemList
                 ulClassName={ulClassName}
-                items={props.items}
                 liClassName={liClassName}
-                linkData={props.linkData}
+                items={props.items}
+                onSelected={props.onSelected}
             ></ItemList>
         </div>
     );

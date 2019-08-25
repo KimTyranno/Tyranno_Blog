@@ -6,21 +6,32 @@ import { Link } from 'react-router-dom';
     ulClassName : ul태그의 클래스명
     liClassName : li태그의 클래스명
     items       : li에 들어가는 데이터
-    linkData    : 링크경로와 보낼 파라미터
+    {
+        name    : 링크이름
+        path    : 링크경로
+        board
+        {
+            title    : 제목
+            content  : 내용
+        }
+    }
     아마 a태그의 href의 파라미터도 추가해야할듯
 */
 const itemList = (props) => {
     const liList = props.items.map((item, i) => (
         <li key={i} className={props.liClassName}>
             <Link to={{
-                pathname: props.linkData[i + 1].path,
+                pathname: item.path,
                 state: [
                     {
-                        title: props.linkData[i + 1].title,
-                        content: props.linkData[i + 1].content
+                        title: item.board.title,
+                        content: item.board.content
                     }
                 ]
-            }}>{item.name}</Link>
+            }}
+                onClick={function (id) {
+                    props.onSelected(i);
+                }}>{item.name}</Link>
         </li>
     ));
     return (
