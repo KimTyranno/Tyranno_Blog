@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 // ul태그와 li태그, a태그를 생성해주는 컴포넌트
 /*
     필요한 파라미터
@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 const itemList = (props) => {
     const liList = props.items.map((item, i) => (
         <li key={i} className={props.liClassName}>
-            <Link to={{
+            <NavLink to={{
                 pathname: item.path,
                 state: [
                     {
@@ -31,7 +31,10 @@ const itemList = (props) => {
             }}
                 onClick={function (id) {
                     props.onSelected(i);
-                }}>{item.name}</Link>
+                }}
+                activeStyle={{
+                    'color': '#9ae8f1'
+                }}>{item.name}</NavLink>
         </li>
     ));
     return (

@@ -1,7 +1,7 @@
 .main{
     display: flex;
     // justify-content: space-between;
-    width: 1000px;
+    max-width: 1500px;
     // height:100%;
     margin:0px auto;
     padding:10px;
@@ -9,7 +9,7 @@
     &__content{
         background: #f6f6f6;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 6px;
     }
 
     &__title{
@@ -19,7 +19,7 @@
 
     /* section 영역 */
     section{
-        flex-basis: 70%;
+        flex-basis: 80%;
         margin-right:10px;
     }
     
@@ -29,10 +29,10 @@
 
     /* article 영역 */
     article{
-        flex-basis: 30%;
+        flex-basis: 20%;
         position:sticky;
         align-self:flex-start;
-        top: 48;
+        top: 53px;
     }
 
     &__list {
@@ -50,8 +50,13 @@
         display:block;
         padding:7px;
         color:black;
+        label{
+            float: right;
+            cursor: pointer;
+        }
     }
 
+    // 검색필드
     &__searchBox{
         display: flex;
 
@@ -74,4 +79,6 @@
             padding:3px;
         }
     }
+
+    
 }

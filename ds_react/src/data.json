@@ -103,30 +103,12 @@
             ]
         },
         {
-            "name": "메뉴4",
-            "path": "/item4",
+            "name": "갤러리",
+            "path": "/gallery",
             "board": {
                 "title": "메뉴4 메인 타이틀",
                 "content": "메뉴4 메인 content"
-            },
-            "subMenu": [
-                {
-                    "name": "메뉴4_sub_1",
-                    "path": "/item4_1",
-                    "board": {
-                        "title": "메뉴4_1 title",
-                        "content": "메뉴4_1 content"
-                    }
-                },
-                {
-                    "name": "메뉴4_sub_2",
-                    "path": "/item4_2",
-                    "board": {
-                        "title": "메뉴4_2 title",
-                        "content": "메뉴4_2 content"
-                    }
-                }
-            ]
+            }
         }
     ]
 }

@@ -1,0 +1,17 @@
+.gallery{
+    &__img {
+        // overflow: hidden;
+        img{
+            border-radius: 6px;
+        }
+    }
+    &--horizen{
+        width: 225px;
+    }
+    &--vertical{
+        height: 225px;
+    }
+    &--widthFull{
+        width:100%;
+    }
+}
