@@ -1,4 +1,10 @@
 .gallery{
+    max-width: 1500px !important; // 아마 gallery.css의 파일명이 main.css보다 먼저오기때문에 안먹힘, 그래서 important로 강제적용
+    
+    &__content{
+        margin-top:10px;
+    }
+    
     &__img {
         // overflow: hidden;
         img{
@@ -13,5 +19,42 @@
     }
     &--widthFull{
         width:100%;
+    }
+
+    &__selectView{
+        display: flex;
+        justify-content: flex-end;
+        margin-right:inherit;
+
+            
+        a {
+            width:40px;
+            padding: 10px;
+            border:1px solid;
+            text-align: center;
+            color:#c5c5c5;
+            position: relative;
+            span{
+                visibility: hidden;
+                opacity: 0;
+                width:70px;
+                font-size:12px;
+                background-color: rgb(51, 51, 51);
+                color:white;
+                z-index: 1;
+                padding: 7px;
+                position: absolute;
+                left:0;
+                margin-left: -15px;
+                transition-duration: 0.5s;
+            }
+        }
+
+        a:hover{
+            span{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 }

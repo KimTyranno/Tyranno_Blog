@@ -3,7 +3,7 @@ const Section = ({ location }) => {
     return (
         <div className="main">
             <section>
-                <div className="main__content main__content--section main__content--red">
+                <div className="main__content main__content--section">
                     <div className="main__title">
                         {location.state ? location.state[0].title : '메인페이지'}
                     </div>
@@ -13,12 +13,12 @@ const Section = ({ location }) => {
                 </div>
             </section>
             <article>
-                <div className="main__content">
+                <div className="main__sideMenu">
                     <div className="main__searchBox">
                         <input type="text" placeholder="검색어를 입력해주세요." />
                         <a href="search"><i className="fas fa-search fa-lg"></i></a>
                     </div>
-                    <div className="main__title">
+                    <div className="main__sideMenu__title">
                         {/* {menuName} */}
                     </div>
                     <ul className='main__list'>

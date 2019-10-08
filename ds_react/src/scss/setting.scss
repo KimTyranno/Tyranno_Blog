@@ -1,0 +1,35 @@
+.setting{
+    display: flex;
+    flex-basis: 100% !important;
+    margin-right: 0 !important;
+    justify-content: center;
+    > div{
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+        margin:30px;
+    }
+
+    > div:hover{
+        box-shadow: 0 0 6px;
+    }
+
+    a {
+        display: block;
+        height: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    i, label {
+        display: block;
+        margin-top:20px;
+    }
+
+    label{
+        font-size:14px;
+    }
+    .ml-15{
+        margin-left:15px;
+    }
+}

@@ -1,30 +1,92 @@
 .main{
     display: flex;
     // justify-content: space-between;
-    max-width: 1500px;
+    max-width: 1200px;
     // height:100%;
     margin:0px auto;
     padding:10px;
-
-    &__content{
-        background: #f6f6f6;
-        padding: 10px;
-        border-radius: 6px;
-    }
-
-    &__title{
-        margin-top: 10px;
-        font-weight: bold;
-    }
 
     /* section 영역 */
     section{
         flex-basis: 80%;
         margin-right:10px;
+
+        hr{
+            margin: 20px 0;
+        }
     }
     
+    &__sideMenu{
+        background: #f6f6f6;
+        padding: 10px;
+        border-radius: 6px;
+
+        // 사이드 메뉴에있는 타이틀명
+        &__title{
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    // 본문 글목록에 있는 타이틀
+    &__title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &__thumbnail{
+        width:150px;
+        height:150px;
+        display: inline-block;
+        border: 1px solid black;
+        flex-basis: 150px;
+        flex-shrink: 0;
+        margin-right: 30px;
+        border-radius: 6px;
+    }
+
+    &__previewText{
+        font-size:13px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* 라인수 */
+        -webkit-box-orient: vertical;
+        word-wrap:break-word; 
+        line-height: 1.42em;
+        height: 7em; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+    }
+
+    &__etc{
+        display: flex;
+        font-size:0.8rem;
+        padding: 6px 0 6px 0;
+        &__date {
+            margin-right: 10px;
+        }
+
+        .fa-comments{
+            margin-right: 5px;
+        }
+    }
+
+    &__content--section:hover{
+        // background-color: rgb(51, 51, 51);
+        // color:white;
+        box-shadow: 0 0 10px;
+        // -webkit-animation-name: hoverPulse;
+        // animation-name: hoverPulse;
+        // -webkit-transform-origin: center bottom;
+        // transform-origin: center bottom;
+        // -webkit-animation-duration: 1s;
+        // animation-duration: 1s;
+        // -webkit-animation-fill-mode: both;
+        // animation-fill-mode: both;
+    }
     &__content--section{
-        height:200px;
+        display: flex;
+        padding: 10px;
+        border-radius: 6px;
     }
 
     /* article 영역 */
@@ -50,9 +112,13 @@
         display:block;
         padding:7px;
         color:black;
+        div{
+            display: inline-block;
+            width: 40px;
+        }
         label{
-            float: right;
             cursor: pointer;
+            font-size: 1.1rem;
         }
     }
 

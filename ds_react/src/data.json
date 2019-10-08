@@ -1,8 +1,8 @@
 {
     "menu": [
         {
-            "name": "메뉴1",
-            "path": "/item1",
+            "name": "프로그래밍",
+            "path": "/programing",
             "board": {
                 "title": "메뉴1 메인 타이틀",
                 "content": "메뉴1 메인 content"
@@ -105,6 +105,14 @@
         {
             "name": "갤러리",
             "path": "/gallery",
+            "board": {
+                "title": "메뉴4 메인 타이틀",
+                "content": "메뉴4 메인 content"
+            }
+        },
+        {
+            "name": "설정",
+            "path": "/setting",
             "board": {
                 "title": "메뉴4 메인 타이틀",
                 "content": "메뉴4 메인 content"

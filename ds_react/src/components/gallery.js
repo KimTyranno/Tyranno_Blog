@@ -7,7 +7,7 @@ class Item extends Component {
     render() {
         return (
             <div
-                className={`gallery__img ${this.props.viewMode === 0 ? 'gallery--horizen' : 'gallery--vertical'}`}
+                className={`gallery__img wow ${this.props.viewMode === 0 ? 'gallery--horizen fadeInUp' : 'gallery--vertical bounceInRight'}`}
                 onClick={this.props.onClick}>
                 <img
                     alt="사진임"
@@ -145,7 +145,8 @@ class Gallery extends Component {
                 transitionDuration={0.5}
                 margin={10}
                 onAppend={this.onAppend}
-                onLayoutComplete={this.onLayoutComplete}>
+                onLayoutComplete={this.onLayoutComplete}
+                column={[0, 5]}>
 
                 {galleryList}
             </JustifiedLayout>
@@ -153,51 +154,59 @@ class Gallery extends Component {
     }
     render() {
         return (
-            <div className="main">
+            <div className="main gallery">
                 <section>
-                    {this.selectedViewMode()}
+                    <div className="gallery__selectView">
+                        <NavLink to={{
+                            pathname: "/gallery/0",
+                            state: [
+                                {
+                                    viewMode: 0
+                                }
+                            ]
+                        }} activeStyle={{
+                            'color': 'black'
+                        }}>
+                            <div>
+                                <i className="fas fa-grip-vertical fa-lg"></i>
+                            </div>
+                            <span>테트리스 형식</span>
+                        </NavLink>
+                        <NavLink to={{
+                            pathname: "/gallery/1",
+                            state: [
+                                {
+                                    viewMode: 1
+                                }
+                            ]
+                        }} activeStyle={{
+                            'color': 'black'
+                        }}>
+                            <div>
+                                <i className="fas fa-grip-horizontal fa-lg"></i>
+                            </div>
+                            <span>벽돌 형식</span>
+                        </NavLink>
+                    </div>
+                    <div class="gallery__content">
+                        {this.selectedViewMode()}
+                    </div>
                 </section>
                 <article>
-                    <div className="main__content">
+                    <div className="main__sideMenu">
                         <div className="main__searchBox">
                             <input type="text" placeholder="검색어를 입력해주세요." />
                             <a href="search"><i className="fas fa-search fa-lg"></i></a>
                         </div>
-                        <div className="main__title">
+                        <div className="main__sideMenu__title">
                             갤러리
                         </div>
                         <ul className='main__list'>
                             <li className="main__item">
-                                <NavLink to={{
-                                    pathname: "/gallery/0",
-                                    state: [
-                                        {
-                                            viewMode: 0
-                                        }
-                                    ]
-                                }} activeStyle={{
-                                    'backgroundColor': '#333',
-                                    'color': 'white'
-                                }}>
-                                    <i className="fas fa-grip-horizontal fa-lg"></i>
-                                    <label>가로형식으로 보기</label>
-                                </NavLink>
+
                             </li>
                             <li className="main__item">
-                                <NavLink to={{
-                                    pathname: "/gallery/1",
-                                    state: [
-                                        {
-                                            viewMode: 1
-                                        }
-                                    ]
-                                }} activeStyle={{
-                                    'backgroundColor': '#333',
-                                    'color': 'white'
-                                }}>
-                                    <i className="fas fa-grip-vertical fa-lg"></i>
-                                    <label>세로형식으로 보기</label>
-                                </NavLink>
+
                             </li>
                         </ul>
                     </div>

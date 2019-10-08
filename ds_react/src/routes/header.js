@@ -13,6 +13,16 @@ const Header = (props) => {
                     }
                 ]
             }}>DS_BLOG</Link>
+            <div>
+                <Link to={{
+                    pathname: '/setting',
+                    state:
+                    {
+                        admin: props.state.admin
+                    }
+
+                }}>관리자 설정</Link>
+            </div>
         </header>
     );
 }

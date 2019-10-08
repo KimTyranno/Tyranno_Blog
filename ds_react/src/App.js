@@ -3,7 +3,8 @@ import { Header, Nav, Article } from './routes';
 import "scss/common.scss";
 class App extends React.Component {
   state = {
-    selected_subMenu_id: 0
+    selected_subMenu_id: 0,
+    admin: 1 // 관리자 로그인시 1
   }
   render() {
     const mainData = {
@@ -17,9 +18,10 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Header item={mainData.contentsEx[0]}></Header>
+        <Header state={this.state} item={mainData.contentsEx[0]}></Header>
         <Nav
           items={menu}
+          state={this.state}
           onSelected={function (id) {
             this.setState({
               selected_subMenu_id: id
