@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60041f6d8209b74c179a4102e2583897",
+    "revision": "4cc02f89a1fa81176038a1df305808a3",
     "url": "/Tyranno_Blog/index.html"
   },
   {
