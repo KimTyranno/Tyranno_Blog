@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Tyranno_Blog/ds_react/static/css/main.98033749.chunk.css",
-    "main.js": "/Tyranno_Blog/ds_react/static/js/main.1e315440.chunk.js",
-    "main.js.map": "/Tyranno_Blog/ds_react/static/js/main.1e315440.chunk.js.map",
-    "runtime~main.js": "/Tyranno_Blog/ds_react/static/js/runtime~main.1c15f0d8.js",
-    "runtime~main.js.map": "/Tyranno_Blog/ds_react/static/js/runtime~main.1c15f0d8.js.map",
-    "static/js/2.8e58ebc0.chunk.js": "/Tyranno_Blog/ds_react/static/js/2.8e58ebc0.chunk.js",
-    "static/js/2.8e58ebc0.chunk.js.map": "/Tyranno_Blog/ds_react/static/js/2.8e58ebc0.chunk.js.map",
-    "index.html": "/Tyranno_Blog/ds_react/index.html",
-    "precache-manifest.fad06010fe6f94ca70a8325106b008f5.js": "/Tyranno_Blog/ds_react/precache-manifest.fad06010fe6f94ca70a8325106b008f5.js",
-    "service-worker.js": "/Tyranno_Blog/ds_react/service-worker.js",
-    "static/css/main.98033749.chunk.css.map": "/Tyranno_Blog/ds_react/static/css/main.98033749.chunk.css.map"
+    "main.css": "/Tyranno_Blog/ds_react/public/index.html/static/css/main.98033749.chunk.css",
+    "main.js": "/Tyranno_Blog/ds_react/public/index.html/static/js/main.e16cc7ef.chunk.js",
+    "main.js.map": "/Tyranno_Blog/ds_react/public/index.html/static/js/main.e16cc7ef.chunk.js.map",
+    "runtime~main.js": "/Tyranno_Blog/ds_react/public/index.html/static/js/runtime~main.71d7de75.js",
+    "runtime~main.js.map": "/Tyranno_Blog/ds_react/public/index.html/static/js/runtime~main.71d7de75.js.map",
+    "static/js/2.8e58ebc0.chunk.js": "/Tyranno_Blog/ds_react/public/index.html/static/js/2.8e58ebc0.chunk.js",
+    "static/js/2.8e58ebc0.chunk.js.map": "/Tyranno_Blog/ds_react/public/index.html/static/js/2.8e58ebc0.chunk.js.map",
+    "index.html": "/Tyranno_Blog/ds_react/public/index.html/index.html",
+    "precache-manifest.f37b5296b1343981769f57f25d5d765a.js": "/Tyranno_Blog/ds_react/public/index.html/precache-manifest.f37b5296b1343981769f57f25d5d765a.js",
+    "service-worker.js": "/Tyranno_Blog/ds_react/public/index.html/service-worker.js",
+    "static/css/main.98033749.chunk.css.map": "/Tyranno_Blog/ds_react/public/index.html/static/css/main.98033749.chunk.css.map"
   }
 }
