@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Tyranno_Blog/precache-manifest.58941036cab8b6d84ac3cb6eca69f237.js"
+  "/Tyranno_Blog/precache-manifest.6bca8050482d8bb64845e223dac9a7e8.js"
 );
 
 self.addEventListener('message', (event) => {
