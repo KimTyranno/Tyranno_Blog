@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .nav{
     position: sticky;
     top:0;
@@ -18,7 +20,7 @@
         }
 
         a:hover{
-            color:#9ae8f1;
+            color:$hover_color;
         }
     }
 }

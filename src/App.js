@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Nav, Article } from './routes';
+import { Header, Nav, Article, Footer } from './routes';
 import "scss/common.scss";
 class App extends React.Component {
   state = {
@@ -18,7 +18,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Header state={this.state} item={mainData.contentsEx[0]}></Header>
+        <Header item={mainData.contentsEx[0]}></Header>
         <Nav
           items={menu}
           state={this.state}
@@ -28,6 +28,7 @@ class App extends React.Component {
             });
           }.bind(this)}></Nav>
         <Article mainData={menu[this.state.selected_subMenu_id]}></Article>
+        <Footer admin={this.state}></Footer>
       </div >
     );
   }

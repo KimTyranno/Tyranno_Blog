@@ -188,7 +188,7 @@ class Gallery extends Component {
                             <span>벽돌 형식</span>
                         </NavLink>
                     </div>
-                    <div class="gallery__content">
+                    <div className="gallery__content">
                         {this.selectedViewMode()}
                     </div>
                 </section>

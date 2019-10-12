@@ -1,3 +1,4 @@
+@import "variables.scss";
 .main{
     display: flex;
     // justify-content: space-between;
@@ -71,7 +72,7 @@
     }
 
     &__content--section:hover{
-        // background-color: rgb(51, 51, 51);
+        // background-color: $mainColor;
         // color:white;
         box-shadow: 0 0 10px;
         // -webkit-animation-name: hoverPulse;
@@ -85,10 +86,15 @@
     }
     &__content--section{
         display: flex;
+        margin-top:10px;
         padding: 10px;
         border-radius: 6px;
     }
 
+    &__sort{
+        border: 1px solid;
+        height:30px;
+    }
     /* article 영역 */
     article{
         flex-basis: 20%;
@@ -130,7 +136,7 @@
             flex-basis: 90%;
             padding: 5px;
             font-size: 0.8rem;
-            border:1px solid #333;
+            border:1px solid $main_color;
             border-radius: 5px;
         }
         
@@ -139,12 +145,11 @@
         }
         
         a{
-            border:1px solid #333;
+            border:1px solid $main_color;
             border-radius: 5px;
             color: #333;
             padding:3px;
         }
     }
 
-    
 }

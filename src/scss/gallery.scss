@@ -48,13 +48,12 @@
                 margin-left: -15px;
                 transition-duration: 0.5s;
             }
-        }
 
-        a:hover{
-            span{
+            &:hover span{
                 visibility: visible;
                 opacity: 1;
             }
         }
+
     }
 }

@@ -23,6 +23,7 @@ class Programing extends Component {
         return (
             <div className="main">
                 <section>
+                    <div className="main__sort">정렬</div>
                     <div className='main__content' /*onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}> */>
                         <a href="#" className="main__content--section">
                             <div className="main__thumbnail">
@@ -38,7 +39,7 @@ class Programing extends Component {
                                         2019.10.06
                                     </div>
                                     <div className="main__etc__comment">
-                                        <i class="fas fa-comments"></i>
+                                        <i className="fas fa-comments"></i>
                                         0
                                     </div>
                                 </div>
@@ -67,7 +68,7 @@ class Programing extends Component {
                                         2019.10.06
                                     </div>
                                     <div className="main__etc__comment">
-                                        <i class="fas fa-comments"></i>
+                                        <i className="fas fa-comments"></i>
                                         0
                                     </div>
                                 </div>
@@ -89,12 +90,12 @@ class Programing extends Component {
                             <a href="search"><i className="fas fa-search fa-lg"></i></a>
                         </div>
                         <div className="main__sideMenu__title">
-                            프로그래밍
+                            IT
                         </div>
                         <ul className='main__list'>
                             <li className="main__item">
                                 <NavLink to={{
-                                    pathname: "/programing/0",
+                                    pathname: "/IT/0",
                                     state: [
                                         {
                                             viewMode: 0
@@ -105,14 +106,14 @@ class Programing extends Component {
                                     'color': 'white'
                                 }}>
                                     <div>
-                                        <i class="fab fa-java fa-lg"></i>
+                                        <i className="fab fa-java fa-lg"></i>
                                     </div>
                                     <label>Java</label>
                                 </NavLink>
                             </li>
                             <li className="main__item">
                                 <NavLink to={{
-                                    pathname: "/programing/1",
+                                    pathname: "/IT/1",
                                     state: [
                                         {
                                             viewMode: 1
@@ -130,7 +131,7 @@ class Programing extends Component {
                             </li>
                             <li className="main__item">
                                 <NavLink to={{
-                                    pathname: "/programing/2",
+                                    pathname: "/IT/2",
                                     state: [
                                         {
                                             viewMode: 1
@@ -148,7 +149,7 @@ class Programing extends Component {
                             </li>
                             <li className="main__item">
                                 <NavLink to={{
-                                    pathname: "/programing/3",
+                                    pathname: "/IT/3",
                                     state: [
                                         {
                                             viewMode: 1
@@ -166,7 +167,7 @@ class Programing extends Component {
                             </li>
                             <li className="main__item">
                                 <NavLink to={{
-                                    pathname: "/programing/4",
+                                    pathname: "/IT/4",
                                     state: [
                                         {
                                             viewMode: 1

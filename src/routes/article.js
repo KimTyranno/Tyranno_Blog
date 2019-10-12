@@ -1,9 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Section, Gallery, Setting, Edit } from 'components';
+import { Section, Gallery, Setting, Edit, Programing } from 'components';
 import { NavLink, Switch } from 'react-router-dom';
 import "scss/main.scss";
-import Programing from '../components/programing';
 
 const Article = (props) => {
     var subMenuList = [];
@@ -35,8 +34,8 @@ const Article = (props) => {
                 <Route path="/gallery" component={Gallery} />
             </Switch>
             <Switch>
-                <Route path="/programing/:subMenu" component={Programing} />
-                <Route path="/programing" component={Programing} />
+                <Route path="/IT/:subMenu" component={Programing} />
+                <Route path="/IT" component={Programing} />
             </Switch>
             <Switch>
                 <Route path="/setting/edit" component={Edit} />

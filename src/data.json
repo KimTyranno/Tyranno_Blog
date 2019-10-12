@@ -1,8 +1,8 @@
 {
     "menu": [
         {
-            "name": "프로그래밍",
-            "path": "/programing",
+            "name": "IT",
+            "path": "/IT",
             "board": {
                 "title": "메뉴1 메인 타이틀",
                 "content": "메뉴1 메인 content"

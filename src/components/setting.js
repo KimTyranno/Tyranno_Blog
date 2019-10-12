@@ -18,17 +18,17 @@ class Setting extends Component {
         const admin = this.state;
         return (
             <div className="main">
-                {admin === undefined || admin === 0 && <Redirect to="/"></Redirect>}
+                {(admin === undefined || admin === 0) && <Redirect to="/"></Redirect>}
                 <section className="setting">
                     <div>
                         <a href="#" className="">
-                            <i class="fas fa-sitemap fa-4x"></i>
+                            <i className="fas fa-sitemap fa-4x"></i>
                             <label>카테고리 편집</label>
                         </a>
                     </div>
                     <div>
                         <Link to='/setting/edit'>
-                            <i class="fas fa-edit fa-4x ml-15"></i>
+                            <i className="fas fa-edit fa-4x ml-15"></i>
                             <label>글 작성</label>
                         </Link>
                     </div>
