@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "175c6108a5557b346219925eb81bf546",
+    "revision": "60041f6d8209b74c179a4102e2583897",
     "url": "/Tyranno_Blog/index.html"
   },
   {
-    "revision": "a8a4b098c2b12d522a42",
+    "revision": "fb4cb4b6fc886b5f66e9",
     "url": "/Tyranno_Blog/static/css/main.2becb0cd.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Tyranno_Blog/static/js/2.6e10ab3a.chunk.js"
   },
   {
-    "revision": "a8a4b098c2b12d522a42",
-    "url": "/Tyranno_Blog/static/js/main.3a3f9793.chunk.js"
+    "revision": "fb4cb4b6fc886b5f66e9",
+    "url": "/Tyranno_Blog/static/js/main.877acb52.chunk.js"
   },
   {
     "revision": "949c70a45fb2581f2b04",
