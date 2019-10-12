@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Tyranno_Blog/static/css/main.98033749.chunk.css",
-    "main.js": "/Tyranno_Blog/static/js/main.5f992ad8.chunk.js",
-    "main.js.map": "/Tyranno_Blog/static/js/main.5f992ad8.chunk.js.map",
-    "runtime~main.js": "/Tyranno_Blog/static/js/runtime~main.6b3ac73b.js",
-    "runtime~main.js.map": "/Tyranno_Blog/static/js/runtime~main.6b3ac73b.js.map",
-    "static/js/2.8e58ebc0.chunk.js": "/Tyranno_Blog/static/js/2.8e58ebc0.chunk.js",
-    "static/js/2.8e58ebc0.chunk.js.map": "/Tyranno_Blog/static/js/2.8e58ebc0.chunk.js.map",
-    "index.html": "/Tyranno_Blog/index.html",
-    "precache-manifest.58941036cab8b6d84ac3cb6eca69f237.js": "/Tyranno_Blog/precache-manifest.58941036cab8b6d84ac3cb6eca69f237.js",
-    "service-worker.js": "/Tyranno_Blog/service-worker.js",
-    "static/css/main.98033749.chunk.css.map": "/Tyranno_Blog/static/css/main.98033749.chunk.css.map"
+    "main.css": "/Tyranno_Blog/ds_react/static/css/main.98033749.chunk.css",
+    "main.js": "/Tyranno_Blog/ds_react/static/js/main.1e315440.chunk.js",
+    "main.js.map": "/Tyranno_Blog/ds_react/static/js/main.1e315440.chunk.js.map",
+    "runtime~main.js": "/Tyranno_Blog/ds_react/static/js/runtime~main.1c15f0d8.js",
+    "runtime~main.js.map": "/Tyranno_Blog/ds_react/static/js/runtime~main.1c15f0d8.js.map",
+    "static/js/2.8e58ebc0.chunk.js": "/Tyranno_Blog/ds_react/static/js/2.8e58ebc0.chunk.js",
+    "static/js/2.8e58ebc0.chunk.js.map": "/Tyranno_Blog/ds_react/static/js/2.8e58ebc0.chunk.js.map",
+    "index.html": "/Tyranno_Blog/ds_react/index.html",
+    "precache-manifest.fad06010fe6f94ca70a8325106b008f5.js": "/Tyranno_Blog/ds_react/precache-manifest.fad06010fe6f94ca70a8325106b008f5.js",
+    "service-worker.js": "/Tyranno_Blog/ds_react/service-worker.js",
+    "static/css/main.98033749.chunk.css.map": "/Tyranno_Blog/ds_react/static/css/main.98033749.chunk.css.map"
   }
 }
