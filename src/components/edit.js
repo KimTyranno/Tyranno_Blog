@@ -1,38 +1,75 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
-import CKEditor from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+// import CKEditor from '@ckeditor/ckeditor5-react';
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import "scss/edit.scss";
 
 class edit extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+
+        }
+    }
+    componentDidMount() {
+        fetch('/write')
+            .then(res => console.log("헤헤헤헤"))
+            .catch(err => console.log('에러래'));
+    }
+
+    readImage = () => {
+        fetch('/readImage')
+            .then(response => response.json())
+            .then(result => console.log())
+            .catch(e => console.log(e));
+    }
+
     render() {
         return (
             <div className="main">
+                <div></div>
                 <section>
-                    <CKEditor
+                    <form action="/write" method="post" id="insertBoardFrm" encType="multipart/form-data">
+                        <textarea name="editor" id="editor" rows="10" cols="100" style={{ "width": "100%", "height": "412px", "display": "none" }}></textarea>
+                        <input type="hidden" name="htmlData" id="htmlData" />
+                        <input type="button" id="insertBoard" value="등록" />
+                    </form>
+                    {/* <CKEditor
                         config={{
                             ckfinder: {
                                 // Upload the images to the server using the CKFinder QuickUpload command
                                 // You have to change this address to your server that has the ckfinder php connector
-                                uploadUrl: 'https://example.com/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images&responseType=json'
+                                uploadUrl: '/upload'
                             }
                         }}
+
                         editor={ClassicEditor}
                         onInit={editor => {
                             // You can store the "editor" and use when it is needed.
                             console.log('Editor is ready to use!', editor);
                         }}
                         onChange={(event, editor) => {
-                            const data = editor.getData();
-                            console.log({ event, editor, data });
+                            var data = editor.getData();
+                            console.log("==========================");
+                            console.log(data);
+                            console.log("실행 !!");
+                            data += "test";
+                            console.log(editor);
+                            this.readImage();
+                            // var tagSplit = data.split("<figure>");
+                            // console.log("============= split ==========");
+                            // console.log(tagSplit);
+                            // console.log({ event, editor, data });
                         }}
                         onBlur={(event, editor) => {
-                            console.log('Blur.', editor);
+                            // console.log('Blur.', editor);
                         }}
                         onFocus={(event, editor) => {
-                            console.log('Focus.', editor);
+                            // console.log('Focus.', editor);
                         }}
-                    />
+                    /> */}
                 </section>
                 <article>
                     <div className="main__sideMenu">

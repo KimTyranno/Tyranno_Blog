@@ -1,0 +1,52 @@
+{
+    "it": {
+        "name": "IT",
+        "path": "/IT",
+        "iconName": "fas fa-laptop-code",
+        "subMenu": [
+            {
+                "name": "Java",
+                "path": "/0",
+                "iconName": "fa-java"
+            },
+            {
+                "name": "Javascript",
+                "path": "/1",
+                "iconName": "fa-js-square"
+            },
+            {
+                "name": "React",
+                "path": "/2",
+                "iconName": "fa-react"
+            },
+            {
+                "name": "HTML",
+                "path": "/3",
+                "iconName": "fa-html5"
+            },
+            {
+                "name": "CSS",
+                "path": "/4",
+                "iconName": "fa-css3"
+            }
+        ]
+    },
+    "menu2": {
+        "name": "메뉴2",
+        "path": "/item2",
+        "iconName": "",
+        "subMenu": []
+    },
+    "menu3": {
+        "name": "메뉴3",
+        "path": "/item3",
+        "iconName": "",
+        "subMenu": []
+    },
+    "gallery": {
+        "name": "갤러리",
+        "path": "/gallery",
+        "iconName": "far fa-images",
+        "subMenu": []
+    }
+}

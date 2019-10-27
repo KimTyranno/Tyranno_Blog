@@ -48,7 +48,7 @@
     }
 
     &__previewText{
-        font-size:13px;
+        font-size:12px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 5; /* 라인수 */
@@ -61,17 +61,18 @@
     &__etc{
         display: flex;
         font-size:0.8rem;
-        padding: 6px 0 6px 0;
+        padding: 8px 0 8px 0;
         &__date {
             margin-right: 10px;
         }
 
-        .fa-comments{
+        .fa-comments, .fa-calendar-alt{
             margin-right: 5px;
         }
     }
 
     &__content--section:hover{
+        cursor: pointer;
         // background-color: $mainColor;
         // color:white;
         box-shadow: 0 0 10px;

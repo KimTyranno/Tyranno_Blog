@@ -9,19 +9,20 @@ footer{
     position: absolute;
     bottom:0;
     
-    a{
+    a , .divBtn{
+        display: inline;
         font-size:.8rem;
         color:white;
         padding:10px;
 
         &:hover{
             color:$hover_color;
+            cursor: pointer;
         }
     }
 
     > label{
         font-size:.8rem;
-        float: right;
     }
     
     .footer{
@@ -69,7 +70,7 @@ footer{
             justify-content: center;
             
             ul{
-                flex-basis: 250px;
+                flex-basis: 200px;
                 margin:50px;
                 li:first-child{
                     border-width: 8px;
@@ -82,7 +83,7 @@ footer{
                     
                     div{
                         display: block;
-                        width:100px;
+                        width:70px;
                         float:left;
                     }
                     a{

@@ -2,10 +2,15 @@ import React from 'react';
 import { Header, Nav, Article, Footer } from './routes';
 import "scss/common.scss";
 class App extends React.Component {
-  state = {
-    selected_subMenu_id: 0,
-    admin: 1 // 관리자 로그인시 1
+
+  constructor(props) {
+    super(props);
+    const menuInfo = require('menuInfo.json');
+    this.state = {
+      menuInfo
+    }
   }
+
   render() {
     const mainData = {
       contentsEx: [
@@ -13,22 +18,15 @@ class App extends React.Component {
       ]
     };
 
-    var data = require('./data.json');
-    const { menu } = data;
-
+    const { menuInfo } = this.state;
     return (
       <div className="App">
         <Header item={mainData.contentsEx[0]}></Header>
         <Nav
-          items={menu}
-          state={this.state}
-          onSelected={function (id) {
-            this.setState({
-              selected_subMenu_id: id
-            });
-          }.bind(this)}></Nav>
-        <Article mainData={menu[this.state.selected_subMenu_id]}></Article>
-        <Footer admin={this.state}></Footer>
+          items={menuInfo}
+        ></Nav>
+        <Article menuInfo={menuInfo}></Article>
+        <Footer menuInfo={menuInfo}></Footer>
       </div >
     );
   }

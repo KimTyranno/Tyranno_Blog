@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Section = ({ location }) => {
     return (
         <div className="main">
@@ -18,12 +19,6 @@ const Section = ({ location }) => {
                         <input type="text" placeholder="검색어를 입력해주세요." />
                         <a href="search"><i className="fas fa-search fa-lg"></i></a>
                     </div>
-                    <div className="main__sideMenu__title">
-                        {/* {menuName} */}
-                    </div>
-                    <ul className='main__list'>
-                        {/* {subMenuList} */}
-                    </ul>
                 </div>
             </article>
         </div>

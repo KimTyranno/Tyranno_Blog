@@ -21,10 +21,10 @@ class Setting extends Component {
                 {(admin === undefined || admin === 0) && <Redirect to="/"></Redirect>}
                 <section className="setting">
                     <div>
-                        <a href="#" className="">
+                        <Link to="/setting">
                             <i className="fas fa-sitemap fa-4x"></i>
                             <label>카테고리 편집</label>
-                        </a>
+                        </Link>
                     </div>
                     <div>
                         <Link to='/setting/edit'>

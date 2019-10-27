@@ -50,7 +50,7 @@ class Gallery extends Component {
     componentWillReceiveProps(nextProps) {
         var newViewMode = nextProps.match.params.viewMode;
         var { viewMode } = this.state;
-        // 
+
         if (newViewMode !== undefined && viewMode !== parseInt(newViewMode)) {
             this.setState({
                 viewMode: parseInt(newViewMode)
